@@ -3960,8 +3960,8 @@ ul.actions li {
 }
 
 #header:hover {
-	background-color: var(--color-black);
-	color: var(--color-contrast);
+	background-color: var(--color-black) !important;
+	color: var(--color-contrast) !important;
 }
 
 #sidebar {
@@ -3978,6 +3978,7 @@ ul.actions li {
 
 .button:hover {
 	background-color: var(--color-contrast);
+	border-color: var(--color-black);
 }
 
 #intro,
