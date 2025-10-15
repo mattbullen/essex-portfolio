@@ -3926,10 +3926,12 @@ a:hover {
 
 iframe.iframe-format {
 	aspect-ratio: 4 / 3;
-	border: 2px solid var(--color-black) !important;
+	border: 2px solid var(--color-dark) !important;
+	display: block;
 	height: 600px;
-	margin: 1.5rem auto 0 calc(50vw - 400px);
+	margin: 1.5rem auto 0 auto;
 	padding: 0;
+	position: relative;
 	width: 800px;
 }
 
@@ -3960,6 +3962,6 @@ div, h1, h3, h5, li, ol, p, ul {
 }
 
 .indent-tab-one {
-	padding-left: 2.5rem;
+	padding-left: 2rem;
 }
 
