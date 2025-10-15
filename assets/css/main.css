@@ -10,7 +10,7 @@
 	--color-black: #000000;
 	--color-contrast: #8f1d21; // #800000; // #560319;
 	--color-dark: #252321; // #192236; // #181b26;
-	--color-white: var(--color-white);
+	--color-white: #f3f3f3;
 }
 
 html, body, div, span, applet, object,
