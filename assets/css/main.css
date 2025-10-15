@@ -8,7 +8,7 @@
 
 :root {
 	--color-black: #010203;
-	--color-contrast: #ffc87c;
+	--color-contrast: #ffe5b4;
 	--color-dark: #7b3b3a;
 	--color-darkest: #3b2f2f;
 	--color-white: #fefefa;
@@ -3998,7 +3998,7 @@ ul.actions li {
 }
 
 .header-stacked {
-	line-height: 1.25 !important;
+	line-height: 1.5 !important;
 	margin: 0 !important;
 }
 
