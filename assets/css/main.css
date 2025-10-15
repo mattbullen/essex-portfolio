@@ -10,7 +10,7 @@
 	--color-black: #000000;
 	--color-contrast: #8f1d21; // #800000; // #560319;
 	--color-dark: #252321; // #192236; // #181b26;
-	--color-white: #f3f3f3;
+	--color-white: #f5f5f5;
 }
 
 html, body, div, span, applet, object,
@@ -24,11 +24,12 @@ tfoot, thead, tr, th, td, article, aside,
 canvas, details, embed, figure, figcaption,
 footer, header, hgroup, menu, nav, output, ruby,
 section, summary, time, mark, audio, video {
-	margin: 0;
-	padding: 0;
 	border: 0;
+	color: var(--color-white);
 	font-size: 100%;
 	font: inherit;
+	margin: 0;
+	padding: 0;
 	vertical-align: baseline;}
 
 article, aside, details, figcaption, figure,
@@ -3928,6 +3929,11 @@ iframe.iframe-format {
 	width: 800px;
 }
 .header-stacked {
+	font-size: 2rem !important;
 	line-height: 1.25;
 	margin: 0;
+}
+
+p {
+	font-size: 1rem !important;
 }
