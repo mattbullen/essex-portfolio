@@ -3927,4 +3927,7 @@ iframe.iframe-format {
 	padding: 0;
 	width: 800px;
 }
-
+.header-stacked {
+	line-height: 1.25;
+	margin: 0;
+}
