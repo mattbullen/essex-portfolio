@@ -4014,3 +4014,8 @@ ul.actions li {
 	font-size: 1.25rem;
 	max-width: 800px;
 }
+
+.spacer {
+	padding: 2rem 0 0 0;
+	width: 100%;
+}
