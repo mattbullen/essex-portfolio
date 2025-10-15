@@ -3918,10 +3918,8 @@ input, select, textarea {
 
 		}
 
-a:hover {
-	color: var(--color-contrast) !important;
+a {
 	cursor: pointer;
-	transition: color 250ms ease-in-out;
 }
 
 iframe.iframe-format {
@@ -3955,8 +3953,28 @@ div, h1, h3, h5, li, ol, p, ul {
 	color: var(--color-dark);
 }
 
+ul.actions {
+	display: block;
+}
+
+ul.actions li {
+	padding: 0 0 1rem 1rem;
+}
+
 #header {
 	background-color: var(--color-dark) !important;
+	color: var(--color-white) !important;
+}
+
+.button {
+	background-color: var(--color-white);
+	color: var(--color-dark);
+	cursor: pointer;
+	transition: all 250ms ease-in-out;
+}
+
+.button:hover {
+	background-color: var(--color-contrast);
 	color: var(--color-white);
 }
 
