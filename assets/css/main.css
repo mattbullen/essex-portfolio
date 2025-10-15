@@ -201,7 +201,7 @@ input, select, textarea {
 	}
 
 		h1.major {
-			margin: 0;
+			margin: 0 0 1.5rem 0;
 			position: relative;
 		}
 
@@ -3918,8 +3918,10 @@ input, select, textarea {
 
 		}
 
-.indent-tab-one {
-	padding-left: 2.5rem;
+a:hover {
+	color: var(--color-contrast);
+	cursor: pointer;
+	transition: color 250ms ease-in-out;
 }
 
 iframe.iframe-format {
@@ -3940,7 +3942,7 @@ h3 {
 }
 
 h5, p {
-	font-size: 1rem !important;
+	font-size: 1.25rem !important;
 }
 
 div, h1, h3, h5, li, ol, p, ul {
@@ -3956,3 +3958,8 @@ div, h1, h3, h5, li, ol, p, ul {
 	line-height: 1.25 !important;
 	margin: 0 !important;
 }
+
+.indent-tab-one {
+	padding-left: 2.5rem;
+}
+
