@@ -3919,7 +3919,7 @@ input, select, textarea {
 		}
 
 a:hover {
-	color: var(--color-contrast);
+	color: var(--color-contrast) !important;
 	cursor: pointer;
 	transition: color 250ms ease-in-out;
 }
@@ -3929,7 +3929,7 @@ iframe.iframe-format {
 	border: 2px solid var(--color-dark) !important;
 	display: block;
 	height: 600px;
-	margin: 1.5rem auto 0 auto;
+	margin: 2rem auto 0 auto;
 	padding: 0;
 	position: relative;
 	width: 800px;
@@ -3947,13 +3947,17 @@ h5, p {
 	font-size: 1.25rem !important;
 }
 
+h1, h3, h5 {
+	margin-bottom: 1rem !important;
+}
+
 div, h1, h3, h5, li, ol, p, ul {
 	color: var(--color-dark);
 }
 
 #header {
 	background-color: var(--color-dark) !important;
-	color: var(--color-white) !important;
+	color: var(--color-white);
 }
 
 .header-stacked {
