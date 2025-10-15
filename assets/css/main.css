@@ -3957,11 +3957,11 @@ div, h1, h3, h5, li, ol, p, ul {
 ul.actions {
 	display: block;
 	margin: 0;
-	padding: 1rem 0 0 0;
+	padding: 2rem 0 0 0;
 }
 
 ul.actions li {
-	padding: 0 0 0 5rem;
+	padding: 0 0 0 3rem;
 }
 
 #header {
