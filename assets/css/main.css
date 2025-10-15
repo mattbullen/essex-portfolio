@@ -3961,6 +3961,13 @@ ul.actions li {
 
 #header:hover {
 	background-color: var(--color-black) !important;
+}
+
+#header a {
+	transition: all 250ms ease-in-out;
+}
+
+#header a:hover {
 	color: var(--color-contrast) !important;
 }
 
