@@ -3960,6 +3960,10 @@ div, h1, h3, h5, li, ol, p, ul {
 	color: var(--color-white);
 }
 
+.font-color-light {
+	color: var(--color-white) !important;
+}
+
 .header-stacked {
 	line-height: 1.25 !important;
 	margin: 0 !important;
