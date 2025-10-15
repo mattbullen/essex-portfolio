@@ -3988,6 +3988,10 @@ ul.actions li {
 	border-color: var(--color-black);
 }
 
+.gist {
+	border: 1px solid var(--color-black) !important;
+}
+
 #intro,
 #intro *,
 .font-color-light,
