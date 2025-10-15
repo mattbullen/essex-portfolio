@@ -37,6 +37,7 @@ footer, header, hgroup, menu, nav, section {
 	display: block;}
 
 body {
+	background-color: var(--color-white);
 	line-height: 1;
 }
 
@@ -3924,16 +3925,29 @@ iframe.iframe-format {
 	aspect-ratio: 4 / 3;
 	border: 2px solid var(--color-black) !important;
 	height: 600px;
-	margin: 0 auto;
+	margin: 0 auto 0 calc(50vw - 400px);
 	padding: 0;
 	width: 800px;
 }
-.header-stacked {
+
+h1 {
 	font-size: 2rem !important;
-	line-height: 1.25;
-	margin: 0;
+}
+
+div, h1, h3, h5, li, ol, p, ul {
+	color: var(--color-dark);
 }
 
 p {
 	font-size: 1rem !important;
+}
+
+#header {
+	background-color: var(--color-dark) !important;
+	color: var(--color-white) !important;
+}
+
+.header-stacked {
+	line-height: 1.25 !important;
+	margin: 0 !important;
 }
