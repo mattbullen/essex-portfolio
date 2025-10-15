@@ -1840,11 +1840,11 @@ input, select, textarea {
 		-webkit-transition: border-color 0.2s ease;
 		-ms-transition: border-color 0.2s ease;
 		transition: border-color 0.2s ease;
-		background-color: transparent;
+		background-color: var(--color-white);
 		border: solid 1px !important;
-		border-color: rgba(255, 255, 255, 0.15) !important;
+		border-color: var(--color-contrast);
 		border-radius: 3em;
-		color: var(--color-white) !important;
+		color: var(--color-dark);
 		cursor: pointer;
 		display: inline-block;
 		font-size: 0.6em;
@@ -3978,7 +3978,13 @@ ul.actions li {
 	color: var(--color-white);
 }
 
-.font-color-light {
+.font-color-light,
+.style1,
+.styl1 div,
+.styl1 h1,
+.styl1 h3,
+.styl1 h5,
+.styl1 p {
 	color: var(--color-white) !important;
 }
 
