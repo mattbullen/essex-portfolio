@@ -3975,15 +3975,7 @@ ul.actions li {
 	background-color: var(--color-darkest) !important;
 }
 
-#toggle-units {
-	cursor: pointer;
-	transition: color 250ms ease-in-out;
-}
-
-#toggle-units:hover {
-	color: var(--color-contrast) !important;
-}
-
+#toggle-units,
 .button {
 	background-color: var(--color-white);
 	border-color: var(--color-black);
@@ -3992,9 +3984,10 @@ ul.actions li {
 	transition: all 250ms ease-in-out;
 }
 
+#toggle-units:hover,
 .button:hover {
 	background-color: var(--color-contrast);
-	border-color: var(--color-black);
+	border: 1px solid var(--color-black);
 }
 
 .centered {

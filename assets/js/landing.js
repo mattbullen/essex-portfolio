@@ -3,13 +3,15 @@ window.addEventListener('DOMContentLoaded', () => {
     if (toggle) {
         toggle.addEventListener('click', () => {
             const blanks = document.getElementsByClassName('blank'),
-                displayed = !blanks[0].style.display || blanks[0].style.display.toLowerCase() === 'display';
+                displayed = !blanks[0].parentElement.style.display || blanks[0].style.display.toLowerCase() === 'display';
             for (let i = 0; i < blanks.length; i++) {
                 if (displayed) {
                     blanks[i].parentElement.style.display = 'none';
+                    blanks[i].parentElement.previousElementSibling.style.display = 'none';
                     toggle.innerText = 'Show All Units';
                 } else {
                     blanks[i].parentElement.style.display = 'display';
+                    blanks[i].parentElement.previousElementSibling.style.display = 'display';
                     toggle.innerText = 'Only Show Units With Exercises';
                 }
             }
