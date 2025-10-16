@@ -6,10 +6,10 @@ window.addEventListener('DOMContentLoaded', () => {
                 displayed = !blanks[0].style.display || blanks[0].style.display.toLowerCase() === 'display';
             for (let i = 0; i < blanks.length; i++) {
                 if (displayed) {
-                    blanks.style.display = 'none';
+                    blanks[i].parentElement.style.display = 'none';
                     toggle.innerText = 'Show All Units';
                 } else {
-                    blanks.style.display = 'display';
+                    blanks[i].parentElement.style.display = 'display';
                     toggle.innerText = 'Only Show Units With Exercises';
                 }
             }
