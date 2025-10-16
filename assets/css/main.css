@@ -3995,6 +3995,7 @@ ul.actions li {
 }
 
 .centered {
+	display: block;
 	margin: 0 auto;
 	text-align: center;
 	width: 800px;
@@ -4002,6 +4003,7 @@ ul.actions li {
 
 .gist {
 	border: 1px solid var(--color-black) !important;
+	margin-top: 2rem !important;
 }
 
 #intro div,
@@ -4036,8 +4038,12 @@ ul.actions li {
 	max-width: 800px;
 }
 
-.paragraph-margin {
+.paragraph-margin-bottom {
 	margin-bottom: 1rem;
+}
+
+.paragraph-margin-top {
+	margin-top: 1.75rem;
 }
 
 .spacer {
@@ -4046,5 +4052,6 @@ ul.actions li {
 }
 
 .text-underline {
+	color: var(--color-black);
 	text-decoration: underline;
 }
