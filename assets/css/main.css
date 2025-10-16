@@ -3975,6 +3975,15 @@ ul.actions li {
 	background-color: var(--color-darkest) !important;
 }
 
+#toggle-units {
+	cursor: pointer;
+	transition: color 250ms ease-in-out;
+}
+
+#toggle-units:hover {
+	color: var(--color-contrast) !important;
+}
+
 .button {
 	background-color: var(--color-white);
 	border-color: var(--color-black);
