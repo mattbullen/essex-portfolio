@@ -3,7 +3,7 @@ window.addEventListener('DOMContentLoaded', () => {
     if (toggle) {
         toggle.addEventListener('click', () => {
             const blanks = document.getElementsByClassName('blank'),
-                displayed = !blanks[0].parentElement.style.display || blanks[0].style.display.toLowerCase() === 'display';
+                displayed = !blanks[0].parentElement.style.display || blanks[0].parentElement.style.display.toLowerCase() === 'display';
             for (let i = 0; i < blanks.length; i++) {
                 if (blanks[i] && blanks[i].parentElement) {
                     if (displayed) {
