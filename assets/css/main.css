@@ -4004,12 +4004,11 @@ ul.actions li {
 	border: 1px solid var(--color-black) !important;
 }
 
-
-.styl1 div,
-.styl1 h1,
-.styl1 h3,
-.styl1 h5,
-.styl1 p,
+#intro div,
+#intro h1,
+#intro h3,
+#intro h5,
+#intro p,
 .font-color-light {
 	color: var(--color-white) !important;
 }
