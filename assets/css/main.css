@@ -4000,12 +4000,13 @@ ul.actions li {
 	border: 1px solid var(--color-black) !important;
 }
 
-.font-color-light,
+
 .styl1 div,
 .styl1 h1,
 .styl1 h3,
 .styl1 h5,
-.styl1 p {
+.styl1 p,
+.font-color-light {
 	color: var(--color-white) !important;
 }
 
