@@ -5,14 +5,21 @@ window.addEventListener('DOMContentLoaded', () => {
             const blanks = document.getElementsByClassName('blank'),
                 displayed = !blanks[0].parentElement.style.display || blanks[0].style.display.toLowerCase() === 'display';
             for (let i = 0; i < blanks.length; i++) {
-                if (displayed) {
-                    blanks[i].parentElement.style.display = 'none';
-                    blanks[i].parentElement.previousElementSibling.style.display = 'none';
-                    toggle.innerText = 'Show All Units';
-                } else {
-                    blanks[i].parentElement.style.display = 'display';
-                    blanks[i].parentElement.previousElementSibling.style.display = 'display';
-                    toggle.innerText = 'Only Show Units With Exercises';
+                if (blanks[i] && blanks[i].parentElement) {
+                    if (displayed) {
+                        blanks[i].parentElement.style.display = 'none';
+                        toggle.innerText = 'Show All Units';
+                    } else {
+                        blanks[i].parentElement.style.display = 'display';
+                        toggle.innerText = 'Only Show Units With Exercises';
+                    }
+                }
+                if (blanks[i] && blanks[i].parentElement && blanks[i].parentElement.previousElementSibling) {
+                    if (displayed) {
+                        blanks[i].parentElement.previousElementSibling.style.display = 'none';
+                    } else {
+                        blanks[i].parentElement.previousElementSibling.style.display = 'display';
+                    }
                 }
             }
         });
