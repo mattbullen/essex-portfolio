@@ -3975,6 +3975,10 @@ ul.actions li {
 	background-color: var(--color-darkest) !important;
 }
 
+#toggle-units {
+	margin: 0 0 3rem 2rem;
+}
+
 #toggle-units,
 .button {
 	background-color: var(--color-white);
@@ -4030,6 +4034,10 @@ ul.actions li {
 .paragraph-block {
 	font-size: 1.25rem;
 	max-width: 800px;
+}
+
+.paragraph-margin {
+	margin-bottom: 1rem;
 }
 
 .spacer {
