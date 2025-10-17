@@ -4032,14 +4032,15 @@ ul.actions li {
 	width: 800px;
 }
 
+.inner p,
+.paragraph-margin-bottom {
+	margin-bottom: 1rem;
+}
+
 .paragraph-block {
 	font-size: 1.25rem;
 	margin-bottom: 2rem;
 	max-width: 800px;
-}
-
-.paragraph-margin-bottom {
-	margin-bottom: 1rem;
 }
 
 .paragraph-margin-top {
