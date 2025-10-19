@@ -3997,13 +3997,16 @@ ul.actions li {
 .centered {
 	display: block;
 	margin: 0 auto;
+	max-width: 800px;
 	text-align: center;
 	width: 800px;
 }
 
 .gist {
 	border: 1px solid var(--color-black) !important;
-	margin-top: 2rem !important;
+	margin: 2rem auto 0 auto !important;
+	max-width: 800px;
+	width: 800px;
 }
 
 #intro div,
@@ -4027,6 +4030,7 @@ ul.actions li {
 	display: block;
 	height: 600px;
 	margin: 2rem auto 0 auto;
+	max-width: 800px;
 	padding: 0;
 	position: relative;
 	width: 800px;
