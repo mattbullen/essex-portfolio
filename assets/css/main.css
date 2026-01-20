@@ -4023,6 +4023,14 @@ ul.actions li {
 	margin: 0 !important;
 }
 
+.hide {
+	display: none !important;
+	height: 0 !important;
+	opacity: 0 !important;
+	visibility: hidden !important;
+	width: 0 !important;
+}
+
 .iframe-format {
 	aspect-ratio: 4 / 3;
 	border: 1px solid var(--color-black);
