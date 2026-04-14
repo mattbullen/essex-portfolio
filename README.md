@@ -1,5 +1,5 @@
 # University of Essex
-### MSc Artificial Intelligence ePortfolio
+### MSc Artificial Intelligence e-Portfolio
 
 This portfolio site currently includes examples of class material from:
 
