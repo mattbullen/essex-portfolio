@@ -8,9 +8,9 @@
 
 :root {
 	--color-black: #010203;
-	--color-contrast: #ffe5b4;
-	--color-dark: #7b3b3a;
-	--color-darkest: #3b2f2f;
+	--color-contrast: #ffcc33;
+	--color-dark: #893f45;
+	--color-darkest: #480607;
 	--color-gray: #ececec;
 	--color-white: #fefefa;
 }
@@ -202,28 +202,28 @@ input, select, textarea {
 		font-size: 2.75em;
 	}
 
-		h1.major {
-			margin: 0 0 1.5rem 0;
-			position: relative;
-		}
+	h1.major {
+		padding: 0 0 1rem 0;
+		position: relative;
+	}
 
-			h1.major:after {
-				background-image: -moz-linear-gradient(to right, var(--color-dark), var(--color-contrast));
-				background-image: -webkit-linear-gradient(to right, var(--color-dark), var(--color-contrast));
-				background-image: -ms-linear-gradient(to right, var(--color-dark), var(--color-contrast));
-				background-image: linear-gradient(to right, var(--color-dark), var(--color-contrast));
-				-moz-transition: max-width 0.2s ease;
-				-webkit-transition: max-width 0.2s ease;
-				-ms-transition: max-width 0.2s ease;
-				transition: max-width 0.2s ease;
-				border-radius: 0.2em;
-				bottom: 0;
-				content: '';
-				height: 0.05em;
-				position: absolute;
-				right: 0;
-				width: 100%;
-			}
+	h1.major:after {
+		background-image: -moz-linear-gradient(to right, var(--color-dark), var(--color-contrast));
+		background-image: -webkit-linear-gradient(to right, var(--color-dark), var(--color-contrast));
+		background-image: -ms-linear-gradient(to right, var(--color-dark), var(--color-contrast));
+		background-image: linear-gradient(to right, var(--color-dark), var(--color-contrast));
+		-moz-transition: max-width 0.2s ease;
+		-webkit-transition: max-width 0.2s ease;
+		-ms-transition: max-width 0.2s ease;
+		transition: max-width 0.2s ease;
+		border-radius: 0.2em;
+		bottom: 0;
+		content: '';
+		height: 0.05em;
+		position: absolute;
+		right: 0;
+		width: 100%;
+	}
 
 	h2 {
 		font-size: 1.75em;
@@ -3933,7 +3933,7 @@ h3 {
 }
 
 h5, p {
-	font-size: 1.25rem !important;
+	font-size: 1.25rem;
 }
 
 h1, h3, h5 {
@@ -3961,7 +3961,7 @@ ul.actions li {
 }
 
 #header:hover {
-	background-color: var(--color-black) !important;
+	background-color: var(--color-darkest) !important;
 }
 
 #header a {
@@ -4082,6 +4082,11 @@ ul.actions li {
 	width: 100%;
 }
 
+.spacer-small {
+	padding: 0.5rem 0 0 0;
+	width: 100%;
+}
+
 .text-underline {
 	color: var(--color-black);
 	text-decoration: underline;
@@ -4101,7 +4106,29 @@ a.button.scrolly {
 	display: none;
 }
 
+#intro > .inner {
+	height: 548px !important;
+}
+
 @media only screen and (max-width: 415px) {
+
+	#footer {
+		height: 2rem;
+	}
+
+	.arrow-down {
+		height: 5rem;
+		margin: 2rem auto 0 auto;
+	}
+
+	.iframe-format {
+		width: 350px;
+	}
+
+	.inner {
+		min-height: calc(100vh - 130px) !important;
+		padding: 2rem !important;
+	}
 
 	.mobile-hide {
 		display: none !important;
@@ -4118,13 +4145,17 @@ a.button.scrolly {
 
 	.name-small {
 		font-size: 1.25rem !important;
+		padding-bottom: 1rem;
 		width: 100%;
+	}
+
+	p {
+		font-size: 1rem;
 	}
 
 }
 
 .divider-icon-header {
-	padding: 1rem 0 0 0;
 	text-align: center;
 	width: 100%;
 }
@@ -4141,4 +4172,37 @@ div.paragraph-block.font-color-light:last-child {
 a.text-plain {
 	border: 0;
 	text-decoration: none;
+}
+
+.logo-wrapper {
+	float: left;
+	margin-right: 1rem;
+	padding-top: 0.2rem;
+	width: 40px;
+}
+
+.logo-box-line {
+	float: left;
+	width: 100%;
+}
+
+.logo-box-left,
+.logo-box-right {
+	background-color: var(--color-black);
+	height: 20px;
+	width: 20px;
+}
+
+.logo-box-left {
+	float: left;
+}
+
+.logo-box-right {
+	float: right;
+}
+
+.bio-wrapper {
+	float: left;
+	padding: 1.75rem 0 0 56px;
+	width: 100%;
 }
