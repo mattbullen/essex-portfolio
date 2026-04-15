@@ -4086,3 +4086,59 @@ ul.actions li {
 	color: var(--color-black);
 	text-decoration: underline;
 }
+
+a.button.scrolly {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.mobile-hide {
+	display: block;
+}
+
+.mobile-show {
+	display: none;
+}
+
+@media only screen and (max-width: 415px) {
+
+	.mobile-hide {
+		display: none !important;
+	}
+
+	.mobile-show {
+		display: block !important;
+	}
+
+	.name-large {
+		font-size: 2rem !important;
+		width: 100%;
+	}
+
+	.name-small {
+		font-size: 1.25rem !important;
+		width: 100%;
+	}
+
+}
+
+.divider-icon-header {
+	padding: 1rem 0 0 0;
+	text-align: center;
+	width: 100%;
+}
+
+.divider-icon-header::before {
+	color: var(--color-white);
+	content: "❖ ❖ ❖ ❖ ❖";
+}
+
+div.paragraph-block.font-color-light:last-child {
+	margin-bottom: -1.75rem;
+}
+
+a.text-plain {
+	border: 0;
+	text-decoration: none;
+}
