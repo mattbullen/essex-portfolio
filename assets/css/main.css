@@ -4090,7 +4090,7 @@ div.sidebar-link {
 }
 
 .spacer-large {
-	padding: 5rem 0 0 0;
+	padding: 3.5rem 0 0 0;
 	width: 100%;
 }
 
@@ -4118,6 +4118,12 @@ a.button.scrolly {
 	display: none;
 }
 
+.bio-wrapper {
+	float: left;
+	padding: 1.75rem 0 0 56px;
+	width: 100%;
+}
+
 @media only screen and (max-width: 415px) {
 
 	#footer {
@@ -4127,6 +4133,10 @@ a.button.scrolly {
 	.arrow-down {
 		height: 5rem;
 		margin: 2rem auto 0 auto;
+	}
+
+	.bio-wrapper {
+		padding-left: 0;
 	}
 
 	.iframe-format {
@@ -4144,6 +4154,10 @@ a.button.scrolly {
 
 	.mobile-show {
 		display: block !important;
+	}
+
+	.mobile-title-margin {
+		margin-top: -3px !important;
 	}
 
 	.name-large {
@@ -4207,12 +4221,6 @@ a.text-plain {
 
 .logo-box-right {
 	float: right;
-}
-
-.bio-wrapper {
-	float: left;
-	padding: 1.75rem 0 0 56px;
-	width: 100%;
 }
 
 ::selection {
