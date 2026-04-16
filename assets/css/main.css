@@ -7,12 +7,13 @@
 @import url(fontawesome-all.min.css);
 
 :root {
-	--color-black: #010203;
-	--color-contrast: #ffcc33;
-	--color-dark: #893f45;
-	--color-darkest: #480607;
+	--color-black: #010101;
+	--color-contrast: #fffdd0;
+	--color-dark: #cd202c;
+	--color-darkest: #622567;
 	--color-gray: #ececec;
-	--color-white: #fefefa;
+	--color-orange: #e98300;
+	--color-white: #fefefe;
 }
 
 html, body, div, span, applet, object,
@@ -27,9 +28,8 @@ canvas, details, embed, figure, figcaption,
 footer, header, hgroup, menu, nav, output, ruby,
 section, summary, time, mark, audio, video {
 	border: 0;
-	/* color: var(--color-white); */
+	font-family: Archivo, Arial, Helvetica, sans-serif !important;
 	font-size: 100%;
-	font: inherit;
 	margin: 0;
 	padding: 0;
 	vertical-align: baseline;}
@@ -109,7 +109,7 @@ input, select, textarea {
 	}
 
 	body {
-		background: var(--color-dark);
+		background: var(--color-white);
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -127,7 +127,7 @@ input, select, textarea {
 
 	body, input, select, textarea {
 		color: rgba(255, 255, 255, 0.55);
-		font-family: Arial, Helvetica, sans-serif;
+		font-family: Archivo, Arial, Helvetica, sans-serif !important;
 		font-size: 16.5pt;
 		font-weight: normal;
 		line-height: 1.75;
@@ -3252,7 +3252,7 @@ input, select, textarea {
 		}
 
 		.wrapper.style1 {
-			background-color: var(--color-dark);
+			background-color: var(--color-white);
 		}
 
 		.wrapper.style1-alt {
@@ -3955,13 +3955,13 @@ ul.actions li {
 }
 
 #header {
-	background-color: var(--color-dark);
+	background-color: var(--color-darkest);
 	color: var(--color-white);
 	transition: all 250ms ease-in-out;
 }
 
 #header:hover {
-	background-color: var(--color-darkest) !important;
+	background-color: var(--color-dark) !important;
 }
 
 #header a {
@@ -3982,17 +3982,16 @@ ul.actions li {
 
 #toggle-units,
 .button {
-	background-color: var(--color-white);
-	border-color: var(--color-black);
-	color: var(--color-black) !important;
+	background-color: var(--color-darkest);
+	border: 1px solid var(--color-black) !important;
+	color: var(--color-white);
 	cursor: pointer;
 	transition: all 250ms ease-in-out;
 }
 
 #toggle-units:hover,
 .button:hover {
-	background-color: var(--color-contrast);
-	border: 1px solid var(--color-black);
+	background-color: var(--color-dark) !important;
 }
 
 .centered {
@@ -4014,7 +4013,10 @@ ul.actions li {
 #intro h1,
 #intro h3,
 #intro h5,
-#intro p,
+#intro p {
+	color: var(--color-black) !important;
+}
+
 .font-color-light {
 	color: var(--color-white) !important;
 }
@@ -4066,8 +4068,8 @@ ul.actions li {
 	transition: 250ms color ease-in-out;
 }
 
-.sidebar-box:hover div.sidebar-link {
-	color: var(--color-white) !important;
+div.sidebar-link {
+	color: var(--color-white);
 }
 
 .sidebar-link {
@@ -4077,8 +4079,18 @@ ul.actions li {
 	width: 100%;
 }
 
+.sidebar-box:hover *,
+.sidebar-link:hover {
+	color: var(--color-contrast) !important;
+}
+
 .spacer {
 	padding: 2rem 0 0 0;
+	width: 100%;
+}
+
+.spacer-large {
+	padding: 5rem 0 0 0;
 	width: 100%;
 }
 
@@ -4104,10 +4116,6 @@ a.button.scrolly {
 
 .mobile-show {
 	display: none;
-}
-
-#intro > .inner {
-	height: 548px !important;
 }
 
 @media only screen and (max-width: 415px) {
@@ -4205,4 +4213,8 @@ a.text-plain {
 	float: left;
 	padding: 1.75rem 0 0 56px;
 	width: 100%;
+}
+
+::selection {
+	background: var(--color-contrast);
 }
