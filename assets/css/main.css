@@ -4226,3 +4226,9 @@ a.text-plain {
 ::selection {
 	background: var(--color-contrast);
 }
+
+.image-panel {
+	border: 1px solid var(--color-black);
+	display: block;
+	margin: 0 auto;
+}
